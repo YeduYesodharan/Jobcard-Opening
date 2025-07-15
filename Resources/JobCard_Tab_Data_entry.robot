@@ -303,16 +303,16 @@ Service Details Tab
                     RETURN  ${odm_updtn_status} 
                 END
                 #just commented--------------------------------#
-                # ${save_status}    ${save_message}    Final Save    ${Job Card No.}    ${Input_Sheet_Path}
-                # IF    ${save_status} == ${False}
-                #     Press Keys Action    esc 
-                #     Press Keys Action    enter
-                #     RETURN    odometer updation failed
-                # ELSE
-                #     update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${Job Card No.}    ${save_message}   ${exception_reason_column_name}
-                #     Press Keys Action    esc 
-                #     Press Keys Action    enter
-                # END
+                ${save_status}    ${save_message}    Final Save    ${Job Card No.}    ${Input_Sheet_Path}
+                IF    ${save_status} == ${False}
+                    Press Keys Action    esc 
+                    Press Keys Action    enter
+                    RETURN    odometer updation failed
+                ELSE
+                    update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${Job Card No.}    ${save_message}   ${exception_reason_column_name}
+                    Press Keys Action    esc 
+                    Press Keys Action    enter
+                END
                  #just commented--------------------------------#
                 # reopen vehicle details for JC creation
 
@@ -670,16 +670,16 @@ Service Details Tab
                     RETURN  ${odm_updtn_status} 
                 END
                  #just commented--------------------------------#
-                # ${save_status}    ${save_message}    Final Save    ${Job Card No.}    ${Input_Sheet_Path}
-                # IF    ${save_status} == ${False}
-                #     Press Keys Action    esc 
-                #     Press Keys Action    enter
-                #     RETURN    odometer updation failed
-                # ELSE
-                #     update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${Job Card No.}    ${save_message}   ${exception_reason_column_name}
-                #     Press Keys Action    esc 
-                #     Press Keys Action    enter
-                # END
+                ${save_status}    ${save_message}    Final Save    ${Job Card No.}    ${Input_Sheet_Path}
+                IF    ${save_status} == ${False}
+                    Press Keys Action    esc 
+                    Press Keys Action    enter
+                    RETURN    odometer updation failed
+                ELSE
+                    update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${Job Card No.}    ${save_message}   ${exception_reason_column_name}
+                    Press Keys Action    esc 
+                    Press Keys Action    enter
+                END
                  #just commented--------------------------------#
                 # reopen vehicle details for JC creation
 
