@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hwr-project-418605",
+  "private_key_id": "4a83ee8cb35853ace4d191a52f48bd67c510748c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDSBolfocTwC7uR\nYEKORZFUBoyurf9dm+x+awSXyrBH7wBKGzDQ5yhfDjdap1f4Tes8hbjwA79DkJYX\npLaD0m63WyC0fX9z3vFJCnJZTCArIdCRBAaqTpBUN4JThNvUNamrQs1kBgWh8fUD\nN5Izg0AvysesAUYCK5YLNH++S0zsw7RHZqt99Y+Ledq96uvoeaMhb6Mkk+iOlFAc\nSQNcE0nUnsMKbFzDbbj3bFhbUy4192QWhWx/LpqWveGu1ZnhzhGx6z+Hed3IJB/r\njvJDr7Dp4O+Ieh6sJVi38yHR87TjKVLdrLDI46+t/iS57sAJ0QMtWJAukw2n4Zj+\nkZmywN2TAgMBAAECggEAYkgEyOeejOYwo9rzyjfrxfI6qxNpSJjKlm3l/FIxI7hH\n3mXS9i71yWWRqa5dkCiGSBAbdtWKD0f9tJqzfgRfIxZVu6Bun/5X0uI8mGTzOLve\nKb5EkDWrfH1tUz/8ztU9zJK6InBe+mWLTjIXDFwDEVpHDcqaxDE5SY0LqjT6jmA9\nDEXXfDndh4v2cdH8jVPk6CgtB3WgcZxXF0FPvPIYngl/Bc9sjZZPA9NECDMcVR0j\nAC0z4HjsqBTgIVHCcULtewuptGHL9FrIS66yhfQzkE6bQV5cSJngfNcd+ZFbqFQa\nqj4v1oOgagrOiawbzhtRkmAzeOteN/u24Ofg5/gvQQKBgQD0riVwQ/mh8rGOhHti\nqKNHhoaa0XmE7kx0Ee637NkIkE4/rs4biVpdlGsD+oPOMdq7dWHrrq7B95SCa+Hr\nIjaYtbVqohoXd/5k33yXeZmfkevN0ONazNqCf/mx93GHFzZGBoiKoZM0s9H1KhFN\nly/PKHEpINRn7uYLaEDhzTYGiwKBgQDbvfWjhOZPatNVSqC7o++3KN/5VetG4kCk\nN0rG26EMnCVDsHD954ufSKzJpdWDrK9fbYy200OZ+VW2SmHN6MiIZRQI6sEJV4l+\nfaOVBA/HHRtEPhHcFqsGHEObDeasECIr8K1luNTyZhhY7ZF5ClxKCtUfdNy9ImDV\ngPTH7M/uGQKBgQCClO4mHCD97SgVh17SKG37ni/4MBNKfmMPDwL35c9uYpVgJ0qY\nJ5Wym6MBXJE7WiACK4M25OMfYaJAeJL5iijZFyDa5+hE3iVGcH9t19fE8XuHPBQa\nQXnca7A26ngMQLcWaCY21kRZvB4xWWIipq09Qbgi2wKA9V6Qd/MojvxmQQKBgF8q\nqtqRsSkN687RjkEVo7jgY/fZJRdC35n/NExhTCNo8J6bKKReBlMKp4KBZrIrNJyQ\nllOLtYhWuq9DEY6a1VZ06DNgcA+6sJpukUz1QFwMmAV7GEMIMjNoREM/xvoX1qTP\nDFm0rcz5OGwzH0CboxKSFHEWLI9g9y0gN2LqhbbpAoGBAJBEFFCWtlkbRDZK50Bf\n10jNGWw1mucTqjUIwjgNw8BJNhxIP+okT38KIw7MK2ecQS9WRhpM6mVMK1jHM/DB\nhtsfMKYbjU3bOK3nJ+vAW91+LXyyOIEaRkrAACgk+YzlPul224f2HsCaKtYfllfe\na3LCrMgwjMo3kLajOM2YKAY0\n-----END PRIVATE KEY-----\n",
+  "client_email": "hwr-code-service@hwr-project-418605.iam.gserviceaccount.com",
+  "client_id": "107214535909980469849",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hwr-code-service%40hwr-project-418605.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

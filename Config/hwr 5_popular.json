@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "phrasal-edition-455411-i2",
+  "private_key_id": "626411da232b939079c98f2638808fc2ba2725be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3RpQlsnPjP6hn\n+t6Dq2nZrlq9Fv2iZqaqoGy84Nj1EsXEAZMnj1fSH05urIqYATE72psPUBTklXcO\nTY92JyPzV2U/dVGCFVS4aPghjn0e6jZmC8BcTPPxKyYhLsKyKPn/Etriwa1FSltN\n5ohTckHlsG1GDHtF2L0xx7thTWmTaKNv8ev9gu35/q4i3y/PQTJZq/W0epRl6ELh\nO+pASD/1bFsUk3iKKntz/TdufLzeGfPZAhM/jYqfT+oQkzcHxu5VNpjj4pX4guIE\n9/dXk4qqDkTxwmJRMBn1AgFY/w5I/FcjzCOd7mTFwKi7mVs4ibUdrGT9kiaxrRd/\nYPB7VBjhAgMBAAECggEADlVlQbt+p7+zRoqOu4J88UrbCt3Q8VIQ59hLGMyG+0fA\nEs/Ct/3UcvkC09IHttKlDJbQuLZdI/FykbpMJYPzIlVr9DYTLVbIvPFssocnzvKn\nVXzGyxEzpOFohoDXNkLRJntNhh16lSg3EtUcRVZyw+lz6l4QiApm5Y1G4NnCj4Yl\nthInAxz80adm4zbMfdrOr3d/gmC/vtcFjp4grxWZhvMCIoeGAy+5YZWUvEtKFgJp\nyEuCYhIdner/LbFagstrm4BnWs3IlSCvj/G1JUbz2+fwRDEKATpEdH8QUHphrPZl\nISlS2tCSB7GZ09HxOKjEGpgfV54/d6rW86pXZMZuyQKBgQD8jnViS9zC+JihcfUs\nukjSmVbGr7tSHn9lNNkyMYCCAupJOBMfztEoe8PSm36aX2tvHTI3lxEECJGSdGe5\niXhTG71HbJGzDUFAV7p6tHsgF7pL43MMhegx1lS0CMOaj3CgalH+BDsSmhvdcNx1\nMFiMRBEF6UBXgX2IeUJ8l5YmRQKBgQC5xkwpImcp/90+lOjtjCCULmfD0J19L6v5\nVjGoFtt9fTUSwiv1zXe2jBedOEhcau2PqVeacv5zqFGndvu005gISUgHQqplW7je\ndHZyOVqjaufOMggAf1LpJ9Dyu86Ps9ktC2qc3YgGdq57jnoEsakeF/QhFX0iLaXs\n8qAPfdwv7QKBgQCNlT9xL54/HyZRu5T60iPpDFV9ZR7aVoaMsifg36dvOzskeO8f\nsc3HqDqLYuiCmmOcEv4H9ARyAmu5ctCDTvHJhY+C7vZvLksaSxQbnfo4b5Tc3lGs\n/5S/+6vYkeE2UJuPEouMn8qODx738UFl4QiC+dWhPrX3WHyLeY8wUbq3EQKBgFq4\nX5Dm4AI+lMhu56C5gV9bmgih44aytQS59t3i66TIdBaJA/axM/jNSOraBVw8S26Q\nf9tItMG+PMHO9PRFMEU7pBUHlTaSKCFaNk1pfL25AyJKhGXZx59cdklTNXgvl6rL\nnHCmLjsZ0fM8jJGmQLQVdn6Bg+4g5JplkYx/JfuxAoGBAN3CyIJpqc8FOAe9XhmL\nbeyWD98k07OCOjbShiXfqb68U2S6F+fcewKuIhwiM3ft8bPAXLL86YohTvfk0yWQ\n+SOMXUrJoTSFWqs36ZEJp9nJoPJ6UEEryX1nU1HUQHMiT/PHi49iOgbUDbXk2b/I\n+ZzI9tBNCV/v0CtkH16LCPKk\n-----END PRIVATE KEY-----\n",
+  "client_email": "rpajobcard@phrasal-edition-455411-i2.iam.gserviceaccount.com",
+  "client_id": "109836675660674924687",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rpajobcard%40phrasal-edition-455411-i2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
