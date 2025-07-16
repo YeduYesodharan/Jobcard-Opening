@@ -29,8 +29,8 @@ ${row_count}    0
 #${sheet_name}   sheet1
 ${imagerootfolder}            ${CURDIR}${/}..\\Locators
 # ${log_folder}                 ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${login_image}                ${imagerootfolder}\\login.png
 ${password_image}             ${imagerootfolder}\\password_input.png
 ${login_ok_button}            ${imagerootfolder}\\login_ok.png

@@ -18,8 +18,8 @@ Resource            Odometer_updation.robot
 ${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
 ${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
 # ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${prefix}    Jobcard already opened for
 ${body_check_list_type}
 ${substring}    Jobcard already opened 

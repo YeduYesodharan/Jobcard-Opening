@@ -47,8 +47,8 @@ ${final_save_ok}    1|1
 ${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
 ${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
 # ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${prefix}    Jobcard already opened for
 ${body_check_list_type}    3|1|1|1|1|1|1|1|9|2|1|1        
 ${body_previous_odometer title}    3|1|1|1|2|1|1|1|1|1|1|7|1

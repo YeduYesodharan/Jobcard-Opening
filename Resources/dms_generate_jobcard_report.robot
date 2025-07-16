@@ -49,7 +49,8 @@ ${excel_select}                         ${imagerootfolder}\\excel_select.png
 ${submit_report_btn}                    ${imagerootfolder}\\submit_report_btn.png
 ${status_rpt_save_btn}                  ${imagerootfolder}\\status_rpt_save_btn.png
 # ${log_folder}                           ${CURDIR}${/}..\\Log
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
 ${dealer_select_error_popup}            ${imagerootfolder}\\dealer_select_error_popup.png
 ${dealer_error_popup_ok_btn}            ${imagerootfolder}\\dealer_error_popup_ok_btn.png
 ${select_location_error_popup}          ${imagerootfolder}\\select_location_error_popup.png

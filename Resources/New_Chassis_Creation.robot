@@ -59,8 +59,8 @@ ${chassis_final_ok}    1|1|1|1|1
 ${chassis_customer_creation_msg_box}    1|1|1|1|3
 ${service_model_code_sheet}       ${CURDIR}${/}..\\Mapping\\Service Model Codes.xlsx
 # ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
 ${chassis_checkbox_window_chassispath}    1|1|1|1|1|2
 

@@ -21,8 +21,8 @@ ${veh_user_name_recall_image}                     ${imagerootfolder}\\veh_user_n
 ${recall_pdf_close_image}                         ${imagerootfolder}\\recall_pdf_close.png
 ${recall_pdf_jobcard_title_image}                 ${imagerootfolder}\\recall_pdf_jobcard_title.png
 # ${log_folder}                                     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 
 
 *** Keywords ***

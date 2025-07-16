@@ -28,8 +28,8 @@ ${submit_btn}                        1|1|2|2
 ${downloaded_status_msg_path}        1|1|1|1|1|1
 ${popup_close_button}                1|1|1|1|2|4
 # ${log_folder}                        ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 
 
 

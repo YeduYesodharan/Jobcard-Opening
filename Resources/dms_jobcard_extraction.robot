@@ -23,8 +23,8 @@ ${url}                                   http://rpa.popularmaruti.com/store-jobc
 ${region_mapping_sheet}                  Mapping//Location Mapping DMS ERP.xlsx
 ${imagerootfolder}                       ${CURDIR}${/}..\\Locators
 # ${log_folder}                            ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${dms_captured_folder}                   ${CURDIR}${/}..\\DMS_captured
 ${transactions_menu_image}               ${imagerootfolder}\\transactions_menu.png
 ${jobcard_opening_menu_image}            ${imagerootfolder}\\jobcard_opening_menu.png

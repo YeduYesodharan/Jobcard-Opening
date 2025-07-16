@@ -20,8 +20,8 @@ ${Location_path}   3|1|1|1|1|1|1|1|4|2|1|1
 ${close_erp_window_approval}   1|1
 ${imagerootfolder}            ${CURDIR}${/}..\\Locators
 # ${log_folder}                 ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${current_month_button}          ${imagerootfolder}\\current_month_button.png
 ${jobcard_button}          ${imagerootfolder}\\jobcard_btn.png
 ${service_jobcard_button}          ${imagerootfolder}\\service_jc_btn.png

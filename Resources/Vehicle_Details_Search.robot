@@ -34,8 +34,8 @@ ${create_chssis_chckbox}    1|1|1|1|1|1
 ${alert_box}    1|1
 ${search_window_close}    1|3|1
 # ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${Body_Branch_path}    3|1|1|1|1|1|1|1|4|2|1|1    
 ${Body_location_path}    3|1|1|1|1|1|1|1|5|2|1|1
 ${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx

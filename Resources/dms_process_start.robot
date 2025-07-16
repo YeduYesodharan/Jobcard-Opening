@@ -14,8 +14,8 @@ Library    Libraries/ERP_methods.py
 
 *** Variables ***
 # ${log_folder}                            ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot
+${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${imagerootfolder}                       ${CURDIR}${/}..\\Locators
 ${exit_btn_logout_image}                 ${imagerootfolder}\\exit_btn_logout.png
 ${exeed_maximum_idle_time_popup_image}   ${imagerootfolder}\\exeed_maximum_idle_time_popup.png
@@ -58,31 +58,35 @@ DMS Data Extraction Process
 
                 Log    ${extraction_status}
 
-                IF    ${extraction_status}==True
+                #---------------------------------------------------failure jc processing commented for DMS3------------------------------------------------------#
+                # IF    ${extraction_status}==True
                     
-                    #-----Keyword used to extract the failure jobcard extraction details from consolidated_report----
-                    #-----Return Value: status True or False, failure_jobcard_rows-----
-                    #-----Argument: consolidated_report_path-----
-                    ${status}    ${failure_jobcard_rows}    Read Failure Jobcard Extraction In Consolidated Report    ${consolidated_report_path}
+                #     #-----Keyword used to extract the failure jobcard extraction details from consolidated_report----
+                #     #-----Return Value: status True or False, failure_jobcard_rows-----
+                #     #-----Argument: consolidated_report_path-----
+                #     ${status}    ${failure_jobcard_rows}    Read Failure Jobcard Extraction In Consolidated Report    ${consolidated_report_path}
                     
 
-                    IF    ${status}==True
+                #     IF    ${status}==True
                         
-                        #-----Keyword used to extract the jobcard details from DMS----
-                        #-----Return Value: extraction_status True or False, failure_jobcard_rows-----
-                        #-----Argument: consolidated_report_path, carry_over_ratio_report_path, failure_jobcard_rows-----
-                        ${extraction_status}   Run Keyword And Return Status    Jobcard Extraction Process    ${consolidated_report_path}    ${carry_over_ratio_report_path}    ${failure_jobcard_rows}    ${date_timestamp}
+                #         #-----Keyword used to extract the jobcard details from DMS----
+                #         #-----Return Value: extraction_status True or False, failure_jobcard_rows-----
+                #         #-----Argument: consolidated_report_path, carry_over_ratio_report_path, failure_jobcard_rows-----
+                #         ${extraction_status}   Run Keyword And Return Status    Jobcard Extraction Process    ${consolidated_report_path}    ${carry_over_ratio_report_path}    ${failure_jobcard_rows}    ${date_timestamp}
 
-                        IF    ${extraction_status}==True
-                            #-----Keyword used to Prepare Failure Report path----
-                            ${failure_report_path}    Prepare Failure Report Path    ${curr_date}
-                            #-----Keyword used to Creating Failure Report----
-                            Create Failure Report    ${failure_report_path}
-                            #-----Keyword used to Updating Failure Report----
-                            Update Failure Report    ${consolidated_report_path}    ${failure_report_path}
-                        END
-                    END
-                END
+                #         IF    ${extraction_status}==True
+                #             #-----Keyword used to Prepare Failure Report path----
+                #             ${failure_report_path}    Prepare Failure Report Path    ${curr_date}
+                #             #-----Keyword used to Creating Failure Report----
+                #             Create Failure Report    ${failure_report_path}
+                #             #-----Keyword used to Updating Failure Report----
+                #             Update Failure Report    ${consolidated_report_path}    ${failure_report_path}
+                #         END
+                #     END
+                # END
+                #---------------------------------------------------failure jc processing commented for DMS3------------------------------------------------------#
+
+
                 #-----Keyword used to Move Consolidated Report To Processed Folder after single execution----
                 #-----Argument: consolidated_report_path-----
                 ${consolid_report_path_in_processed_erp_dir}    Move Consolidated Report To Processed Folder    ${consolidated_report_path}

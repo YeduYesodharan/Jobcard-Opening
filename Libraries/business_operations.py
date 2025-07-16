@@ -16,6 +16,8 @@ def move_dms_report_to_currentdate_folder(current_date):
         # current_path = Path(r"C:\JobcardOpeningIntegrated")
         # root_folder = current_path.parents[len(current_path.parts) - 3]
         root_folder = Path(r"C:\JobcardOpeningIntegrated")
+        # root_folder = Path(r"C:\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening")
+        
         print("Project Root Folder:", root_folder)
 
         parent_folder = os.path.join(root_folder, 'ProcessRelatedFolders')
@@ -586,6 +588,7 @@ def get_current_date_fun():
 def get_process_root_directory():
     # Return a fixed path for the project root
     project_root = Path(r"C:\JobcardOpeningIntegrated")
+    # project_root = Path(r"C:\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening")
     print(f"Project Root Directory: {project_root}")
     return project_root
 
