@@ -78,6 +78,7 @@ ERP Credentials
         # END        
 
         # END
+        Log    ${ERP_Password_Path}
         ${file_status}    ERP_methods.Check File Exists    ${ERP_Password_Path}
         
         IF    '${file_status}' == '${True}'
