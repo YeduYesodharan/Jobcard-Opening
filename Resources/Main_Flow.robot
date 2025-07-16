@@ -86,11 +86,11 @@ ERP Credentials
             Sleep    ${Min_time}
             
             FOR    ${row}    IN    @{credential_data}
-                ${uname}    Set Variable    ${row}[ITChampion and Prod Username]
-                ${pword}    Set Variable    ${row}[ITChampion and Prod Password] 
+                ${uname}    Set Variable    ${row}[ERP Username]
+                ${pword}    Set Variable    ${row}[ERP Password] 
                 # ${uname}    Set Variable    ${row}[Testdb Username]
                 # ${pword}    Set Variable    ${row}[Testdb Password]  
-                ${profile}    Set Variable    ${row}[ERP Profile]
+                ${profile}    Set Variable    ${row}[ERP Profile Name]
 
             END
 
@@ -192,6 +192,7 @@ ERP Login
         Log    ${error_message} 
         Capture Screenshot 
         ERP_methods.Show Message Box    Message    Login Error.Retry Login after Closing Windows   
+        Fail
            
     END
 
@@ -437,20 +438,20 @@ Jobcard Data Entry
                                             Suggested Jobs Tab    ${row}[Job Card No]   ${row}[Demand Code]     ${Input_Sheet_Path}    ${row}[Service Type Description]     
                                             Step Details Tab    ${row}[Job Card No]    ${Input_Sheet_Path}    ${row}[Service Type Description] 
                                              #just commented--------------------------------#
-                                            ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
-                                            Log    ${save_status_message}
-                                            IF    ${save_status} == ${True}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name} 
-                                            Press Keys Action    esc 
-                                            Press Keys Action    enter
-                                            ELSE
+                                            # ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
+                                            # Log    ${save_status_message}
+                                            # IF    ${save_status} == ${True}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name} 
+                                            # Press Keys Action    esc 
+                                            # Press Keys Action    enter
+                                            # ELSE
 
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
-                                                Press Keys Action    esc 
-                                                Press Keys Action    enter
-                                            END
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
+                                            #     Press Keys Action    esc 
+                                            #     Press Keys Action    enter
+                                            # END
                                              #just commented--------------------------------#
                                 
                                         END 
@@ -621,20 +622,20 @@ Jobcard Data Entry
                                             Suggested Jobs Tab    ${row}[Job Card No]   ${row}[Demand Code]     ${Input_Sheet_Path}    ${row}[Service Type Description]     
                                             Step Details Tab    ${row}[Job Card No]    ${Input_Sheet_Path}    ${row}[Service Type Description]  
                                              #just commented--------------------------------#
-                                            ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
-                                            Log    ${save_status_message}
-                                            IF    ${save_status} == ${True}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name}    
-                                            Press Keys Action    esc 
-                                            Press Keys Action    enter
-                                            ELSE
+                                            # ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
+                                            # Log    ${save_status_message}
+                                            # IF    ${save_status} == ${True}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name}    
+                                            # Press Keys Action    esc 
+                                            # Press Keys Action    enter
+                                            # ELSE
 
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
-                                                Press Keys Action    esc 
-                                                Press Keys Action    enter
-                                            END 
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
+                                            #     Press Keys Action    esc 
+                                            #     Press Keys Action    enter
+                                            # END 
                                              #just commented--------------------------------#  
                                         END
 
@@ -1005,20 +1006,20 @@ Jobcard Data Entry
                                             Suggested Jobs Tab    ${row}[Job Card No]   ${row}[Demand Code]     ${Input_Sheet_Path}    ${row}[Service Type Description]     
                                             Step Details Tab    ${row}[Job Card No]    ${Input_Sheet_Path}    ${row}[Service Type Description] 
                                              #just commented--------------------------------#
-                                            ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
-                                            Log    ${save_status_message}
-                                            IF    ${save_status} == ${True}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                            update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name}  
-                                            Press Keys Action    esc 
-                                            Press Keys Action    enter
-                                            ELSE
+                                            # ${save_status}    ${save_status_message}    Final Save    ${row}[Job Card No]    ${Input_Sheet_Path}
+                                            # Log    ${save_status_message}
+                                            # IF    ${save_status} == ${True}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            # update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Success    ${execution_status_column_name}  
+                                            # Press Keys Action    esc 
+                                            # Press Keys Action    enter
+                                            # ELSE
 
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
-                                                update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
-                                                Press Keys Action    esc 
-                                                Press Keys Action    enter
-                                            END
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}     ${row}[Job Card No]    ${save_status_message}    ${exception_reason_column_name}
+                                            #     update_execution_status_in_summary_report    ${Input_Sheet_Path}    ${row}[Job Card No]    Fail    ${execution_status_column_name}
+                                            #     Press Keys Action    esc 
+                                            #     Press Keys Action    enter
+                                            # END
                                              #just commented--------------------------------#
                                         END 
 
