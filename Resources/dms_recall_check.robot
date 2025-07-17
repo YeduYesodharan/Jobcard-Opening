@@ -63,7 +63,7 @@ Check Recall Exist
 
         Run Keyword And Ignore Error        RPA.Browser.Selenium.Maximize Browser Window
         Run Keyword And Ignore Error     RPA.Windows.Maximize Window
-        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${recall_pdf_jobcard_title_image}    ${recall_bill_timeout}
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${recall_pdf_jobcard_title_image}    ${time_out}
         Run Keyword And Ignore Error        RPA.Browser.Selenium.Maximize Browser Window  
         Run Keyword And Ignore Error     RPA.Windows.Maximize Window     
         ${recall_pdf_jobcard_title_image_exist}    SikuliLibrary.Exists    ${recall_pdf_jobcard_title_image}
@@ -81,6 +81,8 @@ Check Recall Exist
             ELSE
                 IF    '${extracted_value}' != '${EMPTY}'
                     ${recall_status}    Set Variable    Yes
+                    Close Browser Processes
+                    Return From Keyword    ${True}    ${extracted_value}    ${recall_status}
                 END
             END 
         ELSE
