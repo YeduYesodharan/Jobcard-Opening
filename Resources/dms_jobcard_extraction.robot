@@ -20,11 +20,12 @@ Resource   Resources/dms_recall_check.robot
 
 *** Variables ***
 ${url}                                   http://rpa.popularmaruti.com/store-jobcards-creation-data
-${region_mapping_sheet}                  Mapping//Location Mapping DMS ERP.xlsx
+${region_mapping_sheet}                  ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
 ${imagerootfolder}                       ${CURDIR}${/}..\\Locators
 # ${log_folder}                            ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
 # ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}     ${CURDIR}${/}..\\Screenshot
 ${dms_captured_folder}                   ${CURDIR}${/}..\\DMS_captured
 ${transactions_menu_image}               ${imagerootfolder}\\transactions_menu.png
 ${jobcard_opening_menu_image}            ${imagerootfolder}\\jobcard_opening_menu.png

@@ -13,9 +13,7 @@ Library    Libraries/ERP_methods.py
 
 
 *** Variables ***
-# ${log_folder}                            ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}    ${CURDIR}${/}..\\Screenshot
 ${imagerootfolder}                       ${CURDIR}${/}..\\Locators
 ${exit_btn_logout_image}                 ${imagerootfolder}\\exit_btn_logout.png
 ${exeed_maximum_idle_time_popup_image}   ${imagerootfolder}\\exeed_maximum_idle_time_popup.png

@@ -50,7 +50,8 @@ def prepare_email_body_output(start_date, report_name, end_date, text_message):
 def read_email_credentials():
 
     # config_file = Path(__file__).resolve().parent.parent / "Config" / "Popular_Credentials.xlsx"
-    config_file = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "Popular_Credentials.xlsx"
+    # config_file = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "Popular_Credentials.xlsx"
+    config_file = Path.cwd() / "Config" / "Popular_Credentials.xlsx"
     # config_file = Path(r"C:\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening") / "Config" / "Popular_Credentials.xlsx"
     
     df = pd.read_excel(config_file)

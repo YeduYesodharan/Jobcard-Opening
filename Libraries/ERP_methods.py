@@ -747,7 +747,8 @@ def recall_process_related_folder_creation(curr_date):
 
 def get_process_root_directory():
     # Return a fixed path for the project root
-    project_root = Path(r"C:\JobcardOpeningIntegrated")
+    # project_root = Path(r"C:\JobcardOpeningIntegrated")
+    project_root = Path.cwd()
     # project_root = Path(r"C:\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening")
     print(f"Project Root Directory: {project_root}")
     return project_root

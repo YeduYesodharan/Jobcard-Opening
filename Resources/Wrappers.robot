@@ -17,9 +17,8 @@ Resource            JobCard_Tab_Data_entry.robot
 
 
 *** Variables ***
-# ${log_folder}     ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}     ${CURDIR}${/}..\\Screenshot
+
 
 
 *** Keywords ***

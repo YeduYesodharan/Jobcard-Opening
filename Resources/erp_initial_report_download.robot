@@ -27,9 +27,7 @@ ${3_dot_select}                      1|1|1|2|1|1|1|1|1|5
 ${submit_btn}                        1|1|2|2
 ${downloaded_status_msg_path}        1|1|1|1|1|1
 ${popup_close_button}                1|1|1|1|2|4
-# ${log_folder}                        ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}    ${CURDIR}${/}..\\Screenshot
 
 
 
@@ -49,7 +47,8 @@ ERP Initial Report Download
             #${erp_report_bodyshop_full_name}  Set Variable   E:\\JobcardOpeningIntegrated\\ProcessRelatedFolders\\2025-04-02\\Downloads\\ERP_Report_Bodyshop_Service20250402105247.xlsx
 
             ${downloads_dir}    Prepare Erp Report Save Location Path
-
+            Log    ${location} 
+            Log    ${region_mapping_sheet}
             ${erp_combined_report_path}    Combine ERP Regular And Bodyshop Report        ${erp_report_regular_full_name}    ${erp_report_bodyshop_full_name}    ${downloads_dir}    ${region_mapping_sheet}    ${location}
 
             # ------   Script changes for single JC run with DMS and ERP. --------
@@ -226,6 +225,7 @@ Export As Excel Selection
 
             ${erp_report_full_name}    Set Variable    ${downloads_dir}\\${downloaded_erp_report_name}.xlsx
             Sleep    ${Min_time}
+            # Sleep    3s
             Type Text    ${downloads_dir}\\${downloaded_erp_report_name}     enter=True
             
             Check For Erp Report Downloaded Successfully
@@ -271,7 +271,7 @@ Check For Erp Report Downloaded Successfully
         Log    ${downloaded_status_msg}
         Log    ${report_downloaded_status_message}
 
-        ${contains}=    Evaluate   "${report_downloaded_status_message}" in """${downloaded_status_msg}"""
+        ${contains}=    Evaluate   """${report_downloaded_status_message}""" in r"""${downloaded_status_msg}"""
         
         IF    "${contains}" == "True"
             Log    ${downloaded_status_msg}

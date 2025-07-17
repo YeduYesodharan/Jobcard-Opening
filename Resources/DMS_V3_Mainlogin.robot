@@ -46,6 +46,9 @@ ${login_failed}    //*[@class="loginFailed"]
 DMS_V3_Login
 
     TRY
+        Log    ${ERP_Password_Path}
+        Log    ${CURDIR}
+        Log    ${CURDIR}${/}..
         ${file_status}    ERP_methods.Check File Exists    ${ERP_Password_Path}
         IF    '${file_status}' == '${True}'
             Open Workbook    ${ERP_Password_Path}

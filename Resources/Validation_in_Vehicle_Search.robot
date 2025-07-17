@@ -18,13 +18,12 @@ Resource            Wrappers.robot
 
 *** Variables ***
 ${ok_to_tabs}    1|3|2
-# ${log_folder}     ${CURDIR}${/}..\\Log  
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}    ${CURDIR}${/}..\\Screenshot
 ${chassis_title}    1|1|1|2
 ${reg_title}    1|1|1|1 
 ${mob_title}    1|1|1|5        
-${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
+${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

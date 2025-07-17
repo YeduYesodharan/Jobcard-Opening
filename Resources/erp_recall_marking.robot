@@ -34,8 +34,6 @@ ${recall_row}    3|1|1|1|1|1|1|1|1|1|3|1|1
 ${first_cell_filter}    1|3|1|1
 ${selected_cell_filter}    1|2|1
 ${imagerootfolder}            ${CURDIR}${/}..\\Locators
-# ${log_folder}                 ${CURDIR}${/}..\\Log
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
 ${current_month_button}          ${imagerootfolder}\\current_month_button.png
 ${transaction_button}        ${imagerootfolder}\\menu_transaction_btn.png
 ${rate_header}          ${imagerootfolder}\\Rate_header.png
@@ -66,7 +64,8 @@ ${filter_confirm}    1|2|1|3
 ${Voucher_no_header}    3|1|1|1|1|1|1|1|1|1|3|3
 ${Report_first_sl_no_path_prod}    3|1|1|1|1|1|1|1|1|1|4|1|1   
 ${Report_first_sl_no_path_test}    3|1|1|1|1|1|1|1|1|1|3|1|1 
-${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
+${branch_mapping}    ${CURDIR}\\Mapping\\Location Mapping DMS ERP.xlsx
+${log_folder}    ${CURDIR}${/}..\\Screenshot
 *** Keywords ***
 
 ERP Recall Marking Navigation

@@ -29,8 +29,9 @@ ${row_count}    0
 #${sheet_name}   sheet1
 ${imagerootfolder}            ${CURDIR}${/}..\\Locators
 # ${log_folder}                 ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
+# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
 # ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}    ${CURDIR}${/}..\\Screenshot
 ${login_image}                ${imagerootfolder}\\login.png
 ${password_image}             ${imagerootfolder}\\password_input.png
 ${login_ok_button}            ${imagerootfolder}\\login_ok.png
@@ -67,7 +68,7 @@ ${total_dms_qunatity}                              ${imagerootfolder}\\total_qua
 ${multiple_mrp_blue}                                ${imagerootfolder}\\mrp_blue_image.png
 ${dummy_image}                                      ${imagerootfolder}\\dummy_image.png
 ${counter}
-${sheet_path}                                      Config//Popular_Credentials.xlsx
+${sheet_path}                                      ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
 ${edge_run_this_time_button}                       ${imagerootfolder}\\run_this_time.png
 ${edge_refresh_button}                             ${imagerootfolder}\\edge_refresh_image.png
 ${sheet_name}                                      Sheet1
@@ -75,7 +76,7 @@ ${incorrect_password_image}                        ${imagerootfolder}\\incorrect
 ${incorrect_password_ok_image}                      ${imagerootfolder}\\incorrect_password_ok.png
 ${Execution_Status}                                 ${True}
 ${status_counter}                                   1
-${path_location_to_branch}                           Config//Popular_Credentials.xlsx
+${path_location_to_branch}                           ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
 ${another_edge_run_this_button}                      ${imagerootfolder}\\another_run_this_time.png
 ${restore_button_image}                              ${imagerootfolder}\\restore_button.png
 ${restore_close_image}                                 ${imagerootfolder}\\restore_close.png 

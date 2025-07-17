@@ -19,9 +19,7 @@ ${Branch_path}    3|1|1|1|1|1|1|1|3|2|1|1
 ${Location_path}   3|1|1|1|1|1|1|1|4|2|1|1
 ${close_erp_window_approval}   1|1
 ${imagerootfolder}            ${CURDIR}${/}..\\Locators
-# ${log_folder}                 ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+${log_folder}     ${CURDIR}${/}..\\Screenshot
 ${current_month_button}          ${imagerootfolder}\\current_month_button.png
 ${jobcard_button}          ${imagerootfolder}\\jobcard_btn.png
 ${service_jobcard_button}          ${imagerootfolder}\\service_jc_btn.png
@@ -31,7 +29,7 @@ ${Service_Jobcard_Heading}    ${imagerootfolder}\\Service_Jobcard_Heading.png
 ${Bodyshop Jobcard Title}    ${imagerootfolder}\\Bodyshop Jobcard Title.png
 ${bodyshop_jobcard_menu_img}    ${imagerootfolder}\\bodyshop_jobcard_menu_img.png
 ${bodyshop_jobcard_btn}    ${imagerootfolder}\\bodyshop_jobcard_btn.png
-${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
+${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

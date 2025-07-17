@@ -15,12 +15,12 @@ Variables  Variables/variables.py
 *** Variables ***
 ${report_name}   Job Card Creation Process
 ${path}    ${EMPTY}
-# ${sheet_path}            Config//Popular_Credentials.xlsx
-${sheet_path}            C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
-# ${region_mapping_sheet}            Mapping//Location Mapping DMS ERP.xlsxc
-${region_mapping_sheet}            C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
+${sheet_path}    ${CURDIR}${/}Config\\Popular_Credentials.xlsx    #working
+${region_mapping_sheet}      ${CURDIR}${/}Mapping\\Location Mapping DMS ERP.xlsx
+
 # ${log_folder}                ${CURDIR}${/}${/}Log
-${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot   
+# ${log_folder}     C:\\JobcardOpeningIntegrated\\Screenshot   
+${log_folder}     ${CURDIR}${/}Screenshot
 
 *** Tasks ***
 #Main process start from here

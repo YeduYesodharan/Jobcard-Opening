@@ -28,10 +28,8 @@ ${index}    1
 ${search_input_odo}    1|2|1|5|2
 ${go_odo}    1|2|1|5|3
 ${Odo_Branch_path}    3|1|1|1|1|1|1|1|2|2|1|1
-# ${log_folder}     ${CURDIR}${/}..\\Log
-${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
-${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
+${log_folder}     ${CURDIR}${/}..\\Screenshot
+${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
 *** Keywords ***  
 
 Odometer Updation Navigation
