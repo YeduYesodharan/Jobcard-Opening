@@ -113,7 +113,8 @@ dms_login
         RETURN    ${False}
     END
     #-------------------------commented for DMS V3 integration----------------------------------------#
-    ${user_id}   ${password}  ${base_url}   Login Read Credentials From Excel    ${sheet_path}
+    # ${user_id}   ${password}  ${base_url}   Login Read Credentials From Excel    ${sheet_path}
+    ${user_id}   ${password}  ${base_url}   Login Read Credentials From Excel    C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
 #     #To dynmaically generate sid
 #     ${sid}    Generate Current Date String
 #     #this will dynamically generate url
