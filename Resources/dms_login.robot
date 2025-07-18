@@ -85,7 +85,7 @@ ${restore_close_image}                                 ${imagerootfolder}\\resto
 Read_credentials
     TRY
           #Read DMS credentials from Popular_Credentials
-          ${sheet_path}   Set Variable    Config//Popular_Credentials.xlsx
+          ${sheet_path}   Set Variable    C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
           ${sheet_name}    Set Variable    Sheet1
           
           #To check credential sheet exists or not in config
