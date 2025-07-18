@@ -30,7 +30,8 @@ ${keep_button}    1|3|1|1|2|1|1|1|4|1|3
 ${dms_link}    1|3|1|1|2|1|1|1|4|1 
 ${keep_btn_img}                        ${imagerootfolder}\\keep_btn_img.png
 ${open_file_img}                       ${imagerootfolder}\\open_file_img.png
-${time_out}    80  
+${time_out}    80 
+${twen_time_out} 
 ${recall_bill_timeout}    120   
 ${session_time_out}   5
 ${dont_show1_popup}                    ${imagerootfolder}\\dont_show1_popup.png    
@@ -47,9 +48,9 @@ ${login_failed}    //*[@class="loginFailed"]
 DMS_V3_Login
 
     TRY
-        Log    ${ERP_Password_Path}
-        Log    ${CURDIR}
-        Log    ${CURDIR}${/}..
+        # Log    ${ERP_Password_Path}
+        # Log    ${CURDIR}
+        # Log    ${CURDIR}${/}..
         ${file_status}    ERP_methods.Check File Exists    ${ERP_Password_Path}
         IF    '${file_status}' == '${True}'
             Open Workbook    ${ERP_Password_Path}
@@ -235,7 +236,7 @@ DMS_Run_Popups
     TRY
         
         #DMS run first popup
-        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${dont_show1_popup}     ${time_out}
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${dont_show1_popup}     ${twen_time_out}
         ${dont_show1_popup_exists}=    SikuliLibrary.Exists    ${dont_show1_popup}   
         IF    ${dont_show1_popup_exists}==True  
 
@@ -248,7 +249,19 @@ DMS_Run_Popups
         END
 
         #DMS run second popup
-        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${time_out}
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
+        ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
+        IF    ${Dms_run_popup_2_exists}==True  
+
+            ${Dms_run_popup_2_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2} 
+            IF    ${Dms_run_popup_2_status} == ${True}
+                SikuliLibrary.Click    ${popup2_run_btn}
+            END
+
+
+        END
+
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
         ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
         IF    ${Dms_run_popup_2_exists}==True  
 
