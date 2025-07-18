@@ -36,7 +36,8 @@ ${search_window_close}    1|3|1
 ${Body_Branch_path}    3|1|1|1|1|1|1|1|4|2|1|1    
 ${Body_location_path}    3|1|1|1|1|1|1|1|5|2|1|1
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
-${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}     C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 *** Keywords ***
 
 Vehicle Details Search with Registration Number

@@ -57,9 +57,11 @@ ${create_chassis_1st_window_close}    1|3|1
 ${create_chassis_checkbox_win_close}    1|1|1|5|2
 ${chassis_final_ok}    1|1|1|1|1
 ${chassis_customer_creation_msg_box}    1|1|1|1|3
-${service_model_code_sheet}       ${CURDIR}${/}..\\Mapping\\Service Model Codes.xlsx
+# ${service_model_code_sheet}       ${CURDIR}${/}..\\Mapping\\Service Model Codes.xlsx
+${service_model_code_sheet}       C:\\JobcardOpeningIntegrated\\Mapping\\Service Model Codes.xlsx
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
-${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}     C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 ${chassis_checkbox_window_chassispath}    1|1|1|1|1|2
 
 *** Keywords ***

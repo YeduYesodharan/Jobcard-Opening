@@ -15,8 +15,10 @@ Resource            Odometer_updation.robot
 
 
 *** Variables ***
-${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
-${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
+# ${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
+${Service_Type_Sheet}       C:\\JobcardOpeningIntegrated\\Mapping\\Service Type Cumulative.xlsx
+# ${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
+${advisor_list_sheet}       C:\\JobcardOpeningIntegrated\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
 ${prefix}    Jobcard already opened for
 ${body_check_list_type}
 ${substring}    Jobcard already opened 
@@ -31,9 +33,11 @@ ${pickupaddress_title}    3|1|1|1|2|1|1|1|1|1|1|4|1
 ${comments_title}    3|1|1|1|2|1|1|1|1|1|1|6|1
 ${comments_inp_field}    3|1|1|1|2|1|1|1|1|1|1|6|2|1       
 ${pickup_address}    3|1|1|1|2|1|1|1|1|1|1|4|2|1                 
-${picker_details_mapping}    ${CURDIR}\\Mapping\\PickUp_Details.xlsx
+# ${picker_details_mapping}    ${CURDIR}\\Mapping\\PickUp_Details.xlsx
+${picker_details_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\PickUp_Details.xlsx
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
-${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}     C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

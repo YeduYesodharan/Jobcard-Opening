@@ -64,7 +64,8 @@ ${filter_confirm}    1|2|1|3
 ${Voucher_no_header}    3|1|1|1|1|1|1|1|1|1|3|3
 ${Report_first_sl_no_path_prod}    3|1|1|1|1|1|1|1|1|1|4|1|1   
 ${Report_first_sl_no_path_test}    3|1|1|1|1|1|1|1|1|1|3|1|1 
-${branch_mapping}    ${CURDIR}\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    ${CURDIR}\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 ${log_folder}    ${CURDIR}${/}..\\Screenshot
 *** Keywords ***
 

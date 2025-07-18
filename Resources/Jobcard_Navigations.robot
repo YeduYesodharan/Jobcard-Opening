@@ -29,7 +29,8 @@ ${Service_Jobcard_Heading}    ${imagerootfolder}\\Service_Jobcard_Heading.png
 ${Bodyshop Jobcard Title}    ${imagerootfolder}\\Bodyshop Jobcard Title.png
 ${bodyshop_jobcard_menu_img}    ${imagerootfolder}\\bodyshop_jobcard_menu_img.png
 ${bodyshop_jobcard_btn}    ${imagerootfolder}\\bodyshop_jobcard_btn.png
-${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

@@ -44,8 +44,10 @@ ${previous_omr_input}    3|1|1|1|2|1|1|1|1|1|1|15|2|1    #3|1|1|1|2|1|1|1|1|1|1|
 ${working_btn}   ${imagerootfolder}\\working_btn.png
 ${final_save_content}    1|3
 ${final_save_ok}    1|1
-${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
-${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
+# ${Service_Type_Sheet}       ${CURDIR}${/}..\\Mapping\\Service Type Cumulative.xlsx
+${Service_Type_Sheet}    C:\\JobcardOpeningIntegrated\\Mapping\\Service Type Cumulative.xlsx
+${advisor_list_sheet}    C:\\JobcardOpeningIntegrated\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
+# ${advisor_list_sheet}       ${CURDIR}${/}..\\Mapping\\Service Advisor List ERP SRM_ELM.xlsx
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
 ${prefix}    Jobcard already opened for
 ${body_check_list_type}    3|1|1|1|1|1|1|1|9|2|1|1        
@@ -63,7 +65,8 @@ ${body_type_of_service_title}    3|1|1|1|2|1|1|1|1|1|1|10|1
 ${body_tos_inp}    3|1|1|1|2|1|1|1|1|1|1|10|2|1|1  
 ${body_service_advisor_inp}    3|1|1|1|2|1|1|1|1|1|1|12|2|1|1  
 ${substring}    Jobcard already opened 
-${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 
 
 

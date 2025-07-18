@@ -22,8 +22,8 @@ ${log_folder}    ${CURDIR}${/}..\\Screenshot
 ${chassis_title}    1|1|1|2
 ${reg_title}    1|1|1|1 
 ${mob_title}    1|1|1|5        
-# ${branch_mapping}    Mapping//Location Mapping DMS ERP.xlsx
-${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

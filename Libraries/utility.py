@@ -373,9 +373,9 @@ def move_screenshot(screenshot_path, log_folder):
 # Get the path to the current script (ab.py)
 
 # json_path = Path(__file__).resolve().parent.parent / "Config" / "hwr 5.json"
-# json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5.json"
+json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5.json"
 # json_path = Path(r"C:\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening") / "Config" / "hwr 5.json"
-json_path = Path.cwd() / "Config" / "hwr 5.json"
+# json_path = Path.cwd() / "Config" / "hwr 5.json"
 
 # GOOGLE_APPLICATION_CREDENTIALS - this should be json file path containing the credentials
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'E:\JobcardOpeningIntegrated\Config\hwr 5.json'  

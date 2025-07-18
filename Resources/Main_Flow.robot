@@ -54,15 +54,14 @@ ${prod_choose_btn}             ${imagerootfolder}\\prod_choose_btn.png
 ${tools}    2|6
 ${>testdb}    1|1|1|2|2|1|1|2|1|1
 ${voucher_type}    3|1|1|1|1|1|1|1|1|2|1|1
-${ERP_Password_Path}       ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
-# ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
+# ${ERP_Password_Path}       ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
+${ERP_Password_Path}    C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
 ${wings_title_img}             ${imagerootfolder}\\wings_title_img.png
 ${uname_input}    1|1|1|1|1|2|2|6|1 
 ${pword_input}    1|1|1|1|1|2|2|8|1
-${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}    ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 

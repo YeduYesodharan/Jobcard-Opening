@@ -24,7 +24,8 @@ Resource            utility.robot
 
 *** Variables ***
 
-${ERP_Password_Path}       ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
+# ${ERP_Password_Path}       ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
+${ERP_Password_Path}    C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
 ${keep_button}    1|3|1|1|2|1|1|1|4|1|3
 ${dms_link}    1|3|1|1|2|1|1|1|4|1 
 ${keep_btn_img}                        ${imagerootfolder}\\keep_btn_img.png

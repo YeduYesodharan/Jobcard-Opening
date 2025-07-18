@@ -67,11 +67,9 @@ ${cust_created_ok}    1|1|1|1|1
 ${regis_cust_updated_ok}    1|1|1|1
 ${create_new_cust_btn}    1|1|1|3|2|1
 ${chassis_customer_creation_msg_box}    1|1|1|1|3
-# ${log_folder}     ${CURDIR}${/}..\\Log
-# ${log_folder}     C:\\Users\popular\Desktop\JobcardOpeningIntegrated\Jobcard-Opening\Screenshot
-# ${log_folder}     C:${/}JobcardOpeningIntegrated\\Screenshot
 ${log_folder}     ${CURDIR}${/}..\\Screenshot
-${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+# ${branch_mapping}     ${CURDIR}${/}..\\Mapping\\Location Mapping DMS ERP.xlsx
+${branch_mapping}    C:\\JobcardOpeningIntegrated\\Mapping\\Location Mapping DMS ERP.xlsx
 
 *** Keywords ***
 
