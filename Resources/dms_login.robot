@@ -66,7 +66,7 @@ ${multiple_mrp_blue}                                ${imagerootfolder}\\mrp_blue
 ${dummy_image}                                      ${imagerootfolder}\\dummy_image.png
 ${counter}
 # ${sheet_path}                                      ${CURDIR}${/}..\\Config\\Popular_Credentials.xlsx
-${sheet_path}    C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
+${sheet_path}                                       C:\\JobcardOpeningIntegrated\\Config\\Popular_Credentials.xlsx
 ${edge_run_this_time_button}                       ${imagerootfolder}\\run_this_time.png
 ${edge_refresh_button}                             ${imagerootfolder}\\edge_refresh_image.png
 ${sheet_name}                                      Sheet1
