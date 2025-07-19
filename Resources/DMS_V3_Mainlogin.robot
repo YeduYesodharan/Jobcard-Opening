@@ -284,8 +284,6 @@ Download Login Link
 
 DMS_Run_Popups
     TRY
-        ${start_time}=    Get Time    epoch
-        ${timeout}=       Set Variable    30    # seconds
 
         WHILE    True
             ${popup_found}=    Set Variable    ${False}
@@ -318,13 +316,6 @@ DMS_Run_Popups
             IF    ${popup_found}==${False}
                 Log    No more popups detected
                 BREAK
-            END
-
-            # Optional: check timeout
-            ${now}=    Get Time    epoch
-            ${elapsed}=    Evaluate    ${now} - ${start_time}
-            IF    ${elapsed} > ${timeout}
-                Fail    Popup handling timed out after ${timeout} seconds
             END
 
         END
