@@ -31,7 +31,7 @@ ${dms_link}    1|3|1|1|2|1|1|1|4|1
 ${keep_btn_img}                        ${imagerootfolder}\\keep_btn_img.png
 ${open_file_img}                       ${imagerootfolder}\\open_file_img.png
 ${time_out}    80 
-${twen_time_out} 
+${twen_time_out}    25 
 ${recall_bill_timeout}    120   
 ${session_time_out}   5
 ${dont_show1_popup}                    ${imagerootfolder}\\dont_show1_popup.png    
