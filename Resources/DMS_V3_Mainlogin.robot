@@ -232,96 +232,96 @@ Download Login Link
         Fail    ${error_message}  
     END
 
-# DMS_Run_Popups
-#     TRY
-        
-#         #DMS run first popup
-#         Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${dont_show1_popup}     ${twen_time_out}
-#         ${dont_show1_popup_exists}=    SikuliLibrary.Exists    ${dont_show1_popup}   
-#         IF    ${dont_show1_popup_exists}==True  
-
-#             ${dont_show1_popup_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${dont_show1_popup} 
-#             IF    ${dont_show1_popup_status} == ${True}
-#                 SikuliLibrary.Click    ${popup1_run_btn}
-#             END
-
-
-#         END
-
-#         #DMS run second popup
-#         Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
-#         ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
-#         IF    ${Dms_run_popup_2_exists}==True  
-
-#             ${Dms_run_popup_2_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2} 
-#             IF    ${Dms_run_popup_2_status} == ${True}
-#                 SikuliLibrary.Click    ${popup2_run_btn}
-#             END
-
-
-#         END
-
-#         Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
-#         ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
-#         IF    ${Dms_run_popup_2_exists}==True  
-
-#             ${Dms_run_popup_2_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2} 
-#             IF    ${Dms_run_popup_2_status} == ${True}
-#                 SikuliLibrary.Click    ${popup2_run_btn}
-#             END
-
-
-#         END
-        
-
-
-#     EXCEPT  AS   ${error_message}
-#         log    ${error_message}
-#         Capture Screenshot 
-#         Fail    ${error_message}     
-#     END
-
-
 DMS_Run_Popups
     TRY
+        
+        #DMS run first popup
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${dont_show1_popup}     ${twen_time_out}
+        ${dont_show1_popup_exists}=    SikuliLibrary.Exists    ${dont_show1_popup}   
+        IF    ${dont_show1_popup_exists}==True  
 
-        WHILE    True
-            ${popup_found}=    Set Variable    ${False}
-
-            # Handle first popup (can appear any number of times)
-            ${dont_show1_popup_exists}=    Run Keyword And Return Status    SikuliLibrary.Exists    ${dont_show1_popup}
-            IF    ${dont_show1_popup_exists}
-                Log    Found first popup
-                ${status}=    Run Keyword And Return Status    SikuliLibrary.Click    ${dont_show1_popup}
-                IF    ${status}
-                    SikuliLibrary.Click    ${popup1_run_btn}
-                    Log    Clicked first popup and run button
-                END
-                ${popup_found}=    Set Variable    ${True}
+            ${dont_show1_popup_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${dont_show1_popup} 
+            IF    ${dont_show1_popup_status} == ${True}
+                SikuliLibrary.Click    ${popup1_run_btn}
             END
 
-            # Handle second popup (can appear any number of times)
-            ${Dms_run_popup_2_exists}=    Run Keyword And Return Status    SikuliLibrary.Exists    ${Dms_run_popup_2}
-            IF    ${Dms_run_popup_2_exists}
-                Log    Found second popup
-                ${status}=    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2}
-                IF    ${status}
-                    SikuliLibrary.Click    ${popup2_run_btn}
-                    Log    Clicked second popup and run button
-                END
-                ${popup_found}=    Set Variable    ${True}
-            END
-
-            # If neither popup found, exit loop
-            IF    ${popup_found}==${False}
-                Log    No more popups detected
-                BREAK
-            END
 
         END
 
-    EXCEPT    AS    ${error_message}
-        Log    ${error_message}
-        Capture Screenshot
-        Fail    ${error_message}
+        #DMS run second popup
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
+        ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
+        IF    ${Dms_run_popup_2_exists}==True  
+
+            ${Dms_run_popup_2_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2} 
+            IF    ${Dms_run_popup_2_status} == ${True}
+                SikuliLibrary.Click    ${popup2_run_btn}
+            END
+
+
+        END
+
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
+        ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
+        IF    ${Dms_run_popup_2_exists}==True  
+
+            ${Dms_run_popup_2_status}    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2} 
+            IF    ${Dms_run_popup_2_status} == ${True}
+                SikuliLibrary.Click    ${popup2_run_btn}
+            END
+
+
+        END
+        
+
+
+    EXCEPT  AS   ${error_message}
+        log    ${error_message}
+        Capture Screenshot 
+        Fail    ${error_message}     
     END
+
+
+# DMS_Run_Popups
+#     TRY
+
+#         WHILE    True
+#             ${popup_found}=    Set Variable    ${False}
+
+#             # Handle first popup (can appear any number of times)
+#             ${dont_show1_popup_exists}=    Run Keyword And Return Status    SikuliLibrary.Exists    ${dont_show1_popup}
+#             IF    ${dont_show1_popup_exists}
+#                 Log    Found first popup
+#                 ${status}=    Run Keyword And Return Status    SikuliLibrary.Click    ${dont_show1_popup}
+#                 IF    ${status}
+#                     SikuliLibrary.Click    ${popup1_run_btn}
+#                     Log    Clicked first popup and run button
+#                 END
+#                 ${popup_found}=    Set Variable    ${True}
+#             END
+
+#             # Handle second popup (can appear any number of times)
+#             ${Dms_run_popup_2_exists}=    Run Keyword And Return Status    SikuliLibrary.Exists    ${Dms_run_popup_2}
+#             IF    ${Dms_run_popup_2_exists}
+#                 Log    Found second popup
+#                 ${status}=    Run Keyword And Return Status    SikuliLibrary.Click    ${Dms_run_popup_2}
+#                 IF    ${status}
+#                     SikuliLibrary.Click    ${popup2_run_btn}
+#                     Log    Clicked second popup and run button
+#                 END
+#                 ${popup_found}=    Set Variable    ${True}
+#             END
+
+#             # If neither popup found, exit loop
+#             IF    ${popup_found}==${False}
+#                 Log    No more popups detected
+#                 BREAK
+#             END
+
+#         END
+
+#     EXCEPT    AS    ${error_message}
+#         Log    ${error_message}
+#         Capture Screenshot
+#         Fail    ${error_message}
+#     END
