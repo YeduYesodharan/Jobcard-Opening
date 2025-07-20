@@ -405,8 +405,9 @@ def extract_image_data(file_path, max_retries=3):
     vertexai.init(project='phrasal-edition-455411-i2', location='asia-south1')
     # vertexai.init(project='hwr-project-418605', location='asia-south1')
     # vertexai.init(project='zinc-ellipse-418415', location='us-central1')
-    model = GenerativeModel(model_name="gemini-1.5-flash-002",safety_settings=safety_config)
+    # model = GenerativeModel(model_name="gemini-1.5-flash-002",safety_settings=safety_config)
     # model = GenerativeModel(model_name="gemini-2.5-flash",safety_settings=safety_config)
+    model = GenerativeModel(model_name="gemini-2.0-flash-lite",safety_settings=safety_config)
     with open(file_path, "rb") as image_file:
         image_data = image_file.read()
  
