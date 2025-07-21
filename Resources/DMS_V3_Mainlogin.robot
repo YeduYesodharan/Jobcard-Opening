@@ -249,7 +249,7 @@ DMS_Run_Popups
         END
 
         #DMS run second popup
-        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${twen_time_out}
         ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
         IF    ${Dms_run_popup_2_exists}==True  
 
@@ -261,7 +261,7 @@ DMS_Run_Popups
 
         END
 
-        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${session_time_out}
+        Run Keyword And Ignore Error    SikuliLibrary.Wait Until Screen Contain    ${Dms_run_popup_2}     ${twen_time_out}
         ${Dms_run_popup_2_exists}=    SikuliLibrary.Exists    ${Dms_run_popup_2}   
         IF    ${Dms_run_popup_2_exists}==True  
 
