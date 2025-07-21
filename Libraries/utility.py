@@ -373,8 +373,8 @@ def move_screenshot(screenshot_path, log_folder):
 # Get the path to the current script (ab.py)
 
 # json_path = Path(__file__).resolve().parent.parent / "Config" / "hwr 5.json"
-# json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5.json"
-json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5_popular.json"
+json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5.json"
+# json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "hwr 5_popular.json"
 
 # GOOGLE_APPLICATION_CREDENTIALS - this should be json file path containing the credentials
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'E:\JobcardOpeningIntegrated\Config\hwr 5.json'  
@@ -402,9 +402,9 @@ def extract_image_data(file_path, max_retries=3):
             ),
         ]
    
-    vertexai.init(project='phrasal-edition-455411-i2', location='asia-south1')
+    # vertexai.init(project='phrasal-edition-455411-i2', location='asia-south1')
     # vertexai.init(project='hwr-project-418605', location='asia-south1')
-    # vertexai.init(project='zinc-ellipse-418415', location='us-central1')
+    vertexai.init(project='zinc-ellipse-418415', location='us-central1')
     # model = GenerativeModel(model_name="gemini-1.5-flash-002",safety_settings=safety_config)
     # model = GenerativeModel(model_name="gemini-2.5-flash",safety_settings=safety_config)
     model = GenerativeModel(model_name="gemini-2.0-flash-lite",safety_settings=safety_config)
