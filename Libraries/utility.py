@@ -382,72 +382,72 @@ json_path = Path(r"C:\JobcardOpeningIntegrated") / "Config" / "phrasal-edition-4
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(json_path)
 
 def extract_image_data(file_path, max_retries=3):
-    for i in range(max_retries):
-        # project and location - available in the json file containing credentials
-        safety_config = [
-                SafetySetting(
-                    category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                    threshold=HarmBlockThreshold.BLOCK_NONE,
-                ),
-                SafetySetting(
-                    category=HarmCategory.HARM_CATEGORY_HARASSMENT,
-                    threshold=HarmBlockThreshold.BLOCK_NONE,
-                ),
-                SafetySetting(
-                    category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                    threshold=HarmBlockThreshold.BLOCK_NONE,
-                ),
-                SafetySetting(
-                    category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                    threshold=HarmBlockThreshold.BLOCK_NONE,
-                ),
-            ]
-    
-        # vertexai.init(project='phrasal-edition-455411-i2', location='asia-south1')
-        # vertexai.init(project='hwr-project-418605', location='asia-south1')
-        # vertexai.init(project='zinc-ellipse-418415', location='us-central1')
-        vertexai.init(project='phrasal-edition-455411-i2', location='us-central1')
-        # model = GenerativeModel(model_name="gemini-1.5-flash-002",safety_settings=safety_config)
-        # model = GenerativeModel(model_name="gemini-2.5-flash",safety_settings=safety_config)
-        model = GenerativeModel(model_name="gemini-2.0-flash-lite",safety_settings=safety_config)
-        with open(file_path, "rb") as image_file:
-            image_data = image_file.read()
-    
-        prompt_text = """
-        Assume that you are an expert in data extraction domain and you are responsible for processing data from images...
-        """
-    
-        prompt_text = """
-        Extract service_advisor_code, service_advisor_name, vehicle_model_id, vehicle_variant_id, color_id, omr, sub_service_type, service_type_id, is_extended_warranty, is_mcp, technical_campaing from the image and return the data in json format.
-        """ 
-    
-        # prompt_text = """Extract tabular data in json format"""
-    
-        image_prompt = [Part.from_data(image_data, mime_type="image/jpeg"),prompt_text]
-    
-        dict_response = None  # Initialize dict_response here
-    
-        try:
-            response = model.generate_content(image_prompt)
+    # for i in range(max_retries):
+    # project and location - available in the json file containing credentials
+    safety_config = [
+            SafetySetting(
+                category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                threshold=HarmBlockThreshold.BLOCK_NONE,
+            ),
+            SafetySetting(
+                category=HarmCategory.HARM_CATEGORY_HARASSMENT,
+                threshold=HarmBlockThreshold.BLOCK_NONE,
+            ),
+            SafetySetting(
+                category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                threshold=HarmBlockThreshold.BLOCK_NONE,
+            ),
+            SafetySetting(
+                category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                threshold=HarmBlockThreshold.BLOCK_NONE,
+            ),
+        ]
 
-            if response.usage_metadata:
-                print("\n🔢 Token Usage:")
-                print("Prompt tokens:", response.usage_metadata.prompt_token_count)
-                print("Response tokens:", response.usage_metadata.candidates_token_count)
-                print("Total tokens:", response.usage_metadata.total_token_count)
-            else:
-                print("No usage metadata available.")
+    # vertexai.init(project='phrasal-edition-455411-i2', location='asia-south1')
+    # vertexai.init(project='hwr-project-418605', location='asia-south1')
+    # vertexai.init(project='zinc-ellipse-418415', location='us-central1')
+    vertexai.init(project='phrasal-edition-455411-i2', location='us-central1')
+    # model = GenerativeModel(model_name="gemini-1.5-flash-002",safety_settings=safety_config)
+    # model = GenerativeModel(model_name="gemini-2.5-flash",safety_settings=safety_config)
+    model = GenerativeModel(model_name="gemini-2.0-flash-lite",safety_settings=safety_config)
+    with open(file_path, "rb") as image_file:
+        image_data = image_file.read()
 
-            data = response.text
-            data = data.replace("```json", '').replace("```", '')
-            # python_obj_data = ast.literal_eval(data)
-            # cleaned_data = json.dumps(python_obj_data, indent=2)
-            dict_response = json.loads(data)
-            break
-        except (ValueError, SyntaxError,json.JSONDecodeError) as e:
-            print("Error")
-            if max_retries == 3:
-                return {"error": "GPT-4o-mini returned non-JSON response", "raw_response": data}
+    prompt_text = """
+    Assume that you are an expert in data extraction domain and you are responsible for processing data from images...
+    """
+
+    prompt_text = """
+    Extract service_advisor_code, service_advisor_name, vehicle_model_id, vehicle_variant_id, color_id, omr, sub_service_type, service_type_id, is_extended_warranty, is_mcp, technical_campaing from the image and return the data in json format.
+    """ 
+
+    # prompt_text = """Extract tabular data in json format"""
+
+    image_prompt = [Part.from_data(image_data, mime_type="image/jpeg"),prompt_text]
+
+    dict_response = None  # Initialize dict_response here
+
+    try:
+        response = model.generate_content(image_prompt)
+
+        if response.usage_metadata:
+            print("\n🔢 Token Usage:")
+            print("Prompt tokens:", response.usage_metadata.prompt_token_count)
+            print("Response tokens:", response.usage_metadata.candidates_token_count)
+            print("Total tokens:", response.usage_metadata.total_token_count)
+        else:
+            print("No usage metadata available.")
+
+        data = response.text
+        data = data.replace("```json", '').replace("```", '')
+        # python_obj_data = ast.literal_eval(data)
+        # cleaned_data = json.dumps(python_obj_data, indent=2)
+        dict_response = json.loads(data)
+        # break
+    except (ValueError, SyntaxError,json.JSONDecodeError) as e:
+        # print("Error")
+        # if max_retries == 3:
+        return {"error": "GPT-4o-mini returned non-JSON response", "raw_response": data}
  
     if dict_response is None:
         raise RuntimeError("Failed to obtain a valid response.")
